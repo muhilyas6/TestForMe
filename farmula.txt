@@ -1,0 +1,27 @@
+ClearCollect(
+    tabcol,
+    {
+        ID: 1, 
+        Name: "Home",
+        Logo: Icon.Home
+    
+        
+    },
+    {
+        ID: 2,
+        Name: "Personal Info",
+        Logo: Icon.Person
+    },
+    {
+        ID: 3,
+        Name: "Contact",
+        Logo: Icon.Phonebook
+    },
+    {
+        ID: 4,
+        Name: "Company Info",
+        Logo: Icon.LogJournal
+    }
+)
+
+visible   ------>If(IsBlank(TextInput2)|| (TextInput3),DisplayMode.Disabled,DisplayMode.Edit)
